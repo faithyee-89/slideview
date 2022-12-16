@@ -3,9 +3,10 @@ package ng.max.slideview;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v7.widget.AppCompatSeekBar;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import androidx.appcompat.widget.AppCompatSeekBar;
 
 public class Slider extends AppCompatSeekBar {
 

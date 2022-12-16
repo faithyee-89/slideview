@@ -3,7 +3,8 @@ package ng.max.slideview.sample;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import ng.max.slideview.SlideView;
 

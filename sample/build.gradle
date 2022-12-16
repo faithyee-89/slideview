@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdk rootProject.compileSdkVersion
 
     defaultConfig {
         applicationId "ng.max.slideview.sample"
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
+        minSdk rootProject.minSdkVersion
+        targetSdk rootProject.targetSdkVersion
         versionCode rootProject.versionCode
         versionName rootProject.versionName
     }
@@ -21,6 +20,6 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
-    implementation project(':slideview')
+    api "androidx.appcompat:appcompat:1.5.1"
+    api project(':slideview')
 }

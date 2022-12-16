@@ -1,10 +1,12 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:7.3.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
     }
 }
@@ -12,17 +14,17 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
     }
 
     ext {
-        compileSdkVersion = 26
-        buildToolsVersion = '26.0.2'
-        minSdkVersion = 14
-        targetSdkVersion = 26
+        compileSdkVersion = 32
+        minSdkVersion = 24
+        targetSdkVersion = 32
         versionCode = 4
         versionName = '1.0.3'
-        supportLibraryVersion = '26.1.0'
     }
 }
 
